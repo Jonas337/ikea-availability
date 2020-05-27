@@ -9,7 +9,7 @@ let task = cron.schedule('* * * * *', () => {
         let dataArray = JSON.stringify(data)
 
         let result = data.filter(entry =>
-            entry.name === 'East Palo Alto' && entry.last_closed < entry.last_open
+            entry.name === 'Baltimore' && entry.last_closed < entry.last_open
         )
 
         if (result.length === 1) {
